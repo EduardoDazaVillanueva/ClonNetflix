@@ -1,8 +1,9 @@
-body{
+body {
     font-family: 'Netflix';
+    overflow-x: hidden;
 }
 
-.navbar{
+.navbar {
     width: 100%;
 
     position: fixed;
@@ -15,24 +16,33 @@ body{
 
     color: white;
 
-    animation: header linear both;
+    animation: nav linear both;
     animation-timeline: scroll(root);
     animation-range: 0 100px;
     z-index: 10;
 
-    /* background-color: transparent; */
-    background-color: black;
+    background-color: transparent;
+
+    -webkit-box-shadow: inset 0px 18px 18px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 18px 18px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 18px 18px 0px rgba(0, 0, 0, 0.75);
 }
 
-.navbar__container-logo{
+@keyframes nav {
+    to {
+        background-color: black;
+    }
+}
+
+.navbar__container-logo {
     width: 120px;
 }
 
-.logo{
+.logo {
     width: 100%;
 }
 
-.navbar__options{
+.navbar__options {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -41,23 +51,44 @@ body{
 
 }
 
-.navbar__option{
+.navbar__option {
     font-weight: 400;
     font-size: 14px;
     color: #fff;
 }
 
-.navbar__option-perfil{
+.navbar__option:hover{
+    cursor: pointer;
+}
+
+.navbar__option-perfil {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.navbar__perfil{
+.flecha{
+    transition: all 300ms ease-in-out;
+}
+
+.navbar__option-perfil:hover .flecha{
+    rotate: 180deg;
+}
+
+.navbar__option--menu{
+    transition: all 300ms ease-in-out;
+}
+
+.navbar__option--menu:hover{
+    opacity: .75;
+    cursor: pointer;
+}
+
+.navbar__perfil {
     border-radius: 4px;
 }
 
-.navbar__icons{
+.navbar__icons {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -66,11 +97,99 @@ body{
     gap: 23px;
 }
 
- .navbar__icon{}
+.navbar__icon {}
 
- svg{
+svg {
     fill: #fff;
- }
+}
 
 
- /* Sección 1 */
+/* Sección 1 */
+.section-1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    overflow: hidden;
+
+    -webkit-box-shadow: inset 0px 0px 48px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 48px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 48px -5px rgba(0, 0, 0, 0.75);
+
+}
+
+.section-1__text-container {
+    margin-top: -40px;
+    padding: 0 60px;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-weight: 400;
+    font-size: 23px;
+    color: #fff;
+    text-align: justify;
+
+    z-index: 1;
+}
+
+.section-1__img-title {}
+
+.section-1__text {}
+
+.section-1__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.section-1__btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 23px;
+    font-weight: 500;
+
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.section-1__btn--izq{
+    background-color: #fff;
+    color: black;
+}
+
+.section-1__btn--izq svg{
+    fill: black;
+}
+
+.section-1__btn--der{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.section-1__btn--der:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.section-1__btn--izq:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.section-1__img-fondo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
