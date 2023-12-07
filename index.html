@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/fonts/Netflix.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <title>Página de inicio - Netflix</title>
 </head>
 
@@ -18,7 +19,7 @@
         </div>
 
         <ul class="navbar__options">
-            <li class="navbar__option navbar__option--menu">Inicio</li>
+            <li class="navbar__option navbar__option--menu activo">Inicio</li>
             <li class="navbar__option navbar__option--menu">Series</li>
             <li class="navbar__option navbar__option--menu">Películas</li>
             <li class="navbar__option navbar__option--menu">Novedades más vistas</li>
@@ -66,20 +67,20 @@
                     compinches para atrapar a una escurridiza estafadora que siempre va un paso por delante.</p>
                 <div class="section-1__btns">
 
-                    <a href="" class="section-1__btn section-1__btn--izq"><svg width="35" height="35" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg" class="ltr-4z3qvp e1svuwfo1" data-name="Play"
-                            aria-hidden="true">
+                    <a href="" class="section-1__btn section-1__btn--izq"><svg width="35" height="35"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="ltr-4z3qvp e1svuwfo1"
+                            data-name="Play" aria-hidden="true">
                             <path
-                                d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                                ></path>
+                                d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z">
+                            </path>
                         </svg>Reproducir</a>
 
-                    <a href="" class="section-1__btn section-1__btn--der"><svg width="35" height="35" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg" class="ltr-4z3qvp e1svuwfo1" data-name="CircleI"
-                            aria-hidden="true">
+                    <a href="" class="section-1__btn section-1__btn--der"><svg width="35" height="35"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="ltr-4z3qvp e1svuwfo1"
+                            data-name="CircleI" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
-                                ></path>
+                                d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z">
+                            </path>
                         </svg>
                         Más información</a>
                 </div>
@@ -95,50 +96,638 @@
                 <h2 class="header__title">Estrenadas hace menos de un año</h2>
             </header>
 
-            <div class="container-films"></div>
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+            <div class="container-principal">
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                <button role="button" id="flecha-izq" class="flecha-izq" ><i class="fa-solid fa-angle-left"></i></button>
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                <div class="container-films">
+                    <div class="carousel">
+                        <article class="film">
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+        
+                        <article class="film">
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                        <article class="film">
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
 
-            <article class="film">
-                <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
-            </article>
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="film">
+
+                            <img src="assets/img/onePiece.jpg" alt="One Piece" class="fim__img">
+
+                            <!-- Hover -->
+                            <div class="film-hover">
+                                <div class="film-hover__container-img">
+                                    <img src="assets/img/onePiece.jpg" alt="" class="film-hover__img">
+                                </div>
+                    
+                                <div class="film-hover__container-info">
+                                    <div class="film-hover__icons">
+                                        <div class="icons__icons-left">
+                                            <article class="icons__icon--play"><i class="fa-solid fa-play"></i></article>
+                                            <article class="icons__icon"><i class="fa-solid fa-check"></i></article>
+                                            <article class="icons__icon"><i class="fa-regular fa-thumbs-up"></i></article>
+                                        </div>
+                    
+                                        <div class="icons__icons-right">
+                                            <article class="icons__icon"><i class="fa-solid fa-angle-down"></i></article>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="film-hover__container-text">
+                                        <p class="film-hover__text">99% de coincidencia</p>
+                                    </div>
+                    
+                                    <div class="film-hover__container-genero">
+                                        <ul class="film-hover__list">
+                                            <li class="film-hover__genero">Estimulante</li>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Irreverente</li>
+                                            </div>
+                    
+                                            <div class="film-hover__genero-container">
+                                                <i class="fa-solid fa-circle"></i>
+                                                <li class="film-hover__genero">Aventura</li>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <button role="button" id="flecha-der" class="flecha-der" ><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
         </section>
 
 
+       
+
+
     </main>
+
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
